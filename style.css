@@ -1,70 +1,69 @@
 .desktop-heading {
-    display: none;
+  display: none;
 }
 
 .desktop-add-heading {
-    display: none;
+  display: none;
 }
 
 .book-details {
-    /* justify-content: space-between; */
-    height: 300px;
-    background-color: rgb(250, 247, 243);
-    overflow: hidden;
-    overflow-y: scroll;
+  /* justify-content: space-between; */
+  height: 300px;
+  background-color: rgb(250, 247, 243);
+  overflow: hidden;
+  overflow-y: scroll;
 }
 
 @media screen and (min-width: 768px) {
+  .desktop-heading {
+    display: block;
+  }
 
-    .desktop-heading {
-        display: block;
-    }
+  .mobile-heading {
+    display: none;
+  }
 
-    .mobile-heading {
-        display: none;
-    }
+  .book-details {
+    justify-content: space-between;
+  }
 
-    .book-details {
-        justify-content: space-between;
-    }
+  .desktop-add-heading::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 8rem;
+    height: 2px;
+    background-color: black;
+    transform: translate(-50%, 0);
+  }
 
-    .desktop-add-heading::before {
-        content: "";
-        position: absolute;
-        left: 50%;
-        bottom: 0;
-        width: 8rem;
-        height: 2px;
-        background-color: black;
-        transform: translate(-50%, 0);
-    }
+  .book-menu {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
 
-    .book-menu {
-        display: flex;
-        justify-content: space-between;
-        gap: 20px;
-    }
+  .add-form {
+    text-align: center;
+  }
 
-    .add-form {
-        text-align: center;
-    }
+  .add-form input {
+    width: 50%;
+  }
 
-    .add-form input {
-        width: 50%;
-    }
+  .remove,
+  .add {
+    box-shadow: 5px 10px;
+  }
 
-    .remove,
-    .add {
-        box-shadow: 5px 10px;
-    }
+  .add {
+    box-shadow: 5px 10px;
 
-    .add {
-        box-shadow: 5px 10px;
-        /* float: right; */
-    }
+    /* float: right; */
+  }
 
-    .desktop-add-heading {
-        display: block;
-    }
-
+  .desktop-add-heading {
+    display: block;
+  }
 }

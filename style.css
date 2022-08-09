@@ -6,6 +6,14 @@
     display: none;
 }
 
+.book-details {
+    /* justify-content: space-between; */
+    height: 300px;
+    background-color: rgb(250, 247, 243);
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
 @media screen and (min-width: 768px) {
 
     .desktop-heading {
@@ -17,7 +25,6 @@
     }
 
     .book-details {
-        display: flex;
         justify-content: space-between;
     }
 

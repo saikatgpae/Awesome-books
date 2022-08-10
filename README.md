@@ -12,7 +12,6 @@
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://saikatgpae.github.io/Awesome-books/)
 
 
 ## Getting Started

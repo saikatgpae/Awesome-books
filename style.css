@@ -1,33 +1,30 @@
 .desktop-heading {
-  display: none;
+    display: none;
 }
 
 .desktop-add-heading {
-  display: none;
+    display: none;
 }
 
 .book-details {
-  /* justify-content: space-between; */
-  height: 300px;
-  background-color: rgb(250, 247, 243);
-  overflow: hidden;
-  overflow-y: scroll;
+    /* justify-content: space-between; */
+    height: 300px;
+    background-color: rgb(250, 247, 243);
+    overflow: hidden;
+    overflow-y: scroll;
 }
 
 @media screen and (min-width: 768px) {
-  .desktop-heading {
-    display: block;
-  }
-
-  .mobile-heading {
-    display: none;
-  }
-
-  .book-details {
-    justify-content: space-between;
-  }
-
-  .desktop-add-heading::before {
+    .desktop-heading {
+        display: block;
+    }
+    .mobile-heading {
+        display: none;
+    }
+    .book-details {
+        justify-content: space-between;
+    }
+    /* .desktop-add-heading::before {
     content: "";
     position: absolute;
     left: 50%;
@@ -36,34 +33,27 @@
     height: 2px;
     background-color: black;
     transform: translate(-50%, 0);
-  }
-
-  .book-menu {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-  }
-
-  .add-form {
-    text-align: center;
-  }
-
-  .add-form input {
-    width: 50%;
-  }
-
-  .remove,
-  .add {
-    box-shadow: 5px 10px;
-  }
-
-  .add {
-    box-shadow: 5px 10px;
-
-    /* float: right; */
-  }
-
-  .desktop-add-heading {
-    display: block;
-  }
+  } */
+    .book-menu {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
+    .add-form {
+        text-align: center;
+    }
+    .add-form input {
+        width: 50%;
+    }
+    .remove,
+    .add {
+        box-shadow: 5px 10px;
+    }
+    .add {
+        box-shadow: 5px 10px;
+        /* float: right; */
+    }
+    .desktop-add-heading {
+        display: block;
+    }
 }

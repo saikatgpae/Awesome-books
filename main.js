@@ -1,3 +1,4 @@
+/* eslint-disable */
 var storedBooksList = JSON.parse(localStorage.getItem('books'));
 class Book {
   constructor(title, author) {
@@ -55,3 +56,6 @@ document.querySelector('#removeAll').addEventListener('click', () => {
   localStorage.removeItem('books');
   location.reload();
 });
+
+
+/* eslint-enable */

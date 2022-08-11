@@ -10,7 +10,9 @@
 - Frameworks: No framework used.
 - Technologies used: Linters, Bootstrap.
 
-## Live Demo (https://saikatgpae.github.io/Awesome-books/)
+
+[Live Demo Link](https://saikatgpae.github.io/Awesome-books/)
+
 
 
 

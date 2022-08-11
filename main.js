@@ -1,9 +1,11 @@
 /* eslint-disable */
 var storedBooksList = JSON.parse(localStorage.getItem('books'));
+console.log(storedBooksList);
 class Book {
-  constructor(title, author) {
+  constructor(title, author, index) {
     this.title = title;
     this.author = author;
+    this.index = index;
   }
 }
 
@@ -17,11 +19,16 @@ class Books {
       this.list.push(new Book(title, author));
     }
   }
+
+  removeItem(index) {
+    if (Array.isArray(this.list)) {
+      const array = this.list;
+      array.splice(index, 1);
+    }
+  }
 }
 
 // Printing the local storage data
-
-console.log(storedBooksList);
 if (localStorage.getItem('books') != null) {
   for (let i = 0; i < storedBooksList.length; i++) {
     const book = document.createElement('ul');
@@ -34,13 +41,15 @@ if (localStorage.getItem('books') != null) {
   }
 }
 
+
 // ADD NEW BOOK.
-const books = new Books();
+
 document.getElementById('add').addEventListener('click', () => {
+  const books = new Books();
   const title = document.getElementById('title').value;
   const author = document.getElementById('author').value;
   books.add(title, author);
-  console.log(books.list);
+  // console.log(books.list);
   if (localStorage.getItem('books') === null) {
     localStorage.setItem('books', JSON.stringify(books.list));
     location.reload();
@@ -56,6 +65,5 @@ document.querySelector('#removeAll').addEventListener('click', () => {
   localStorage.removeItem('books');
   location.reload();
 });
-
 
 /* eslint-enable */

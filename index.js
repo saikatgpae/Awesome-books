@@ -6,6 +6,7 @@ if (localStorage.getItem('books') === null) {
     // Clicking Add button pushing the new entry inside the list
     document.querySelector('#add').addEventListener('click', addNewBook);
 } else {
+    // printing the local storage
     const storedBooksList = JSON.parse(localStorage.getItem('books'));
 
     // printing the local storage
@@ -26,7 +27,7 @@ if (localStorage.getItem('books') === null) {
 
 // REMOVING THE WHOLE LIST
 document.querySelector('#removeAll').addEventListener('click', () => {
-    localStorage.clear();
+    localStorage.removeItem('books');
     location.reload();
 });
 

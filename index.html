@@ -14,26 +14,53 @@
 <body>
     <div class="p-4">
         <section class="main">
-            <h1 class="mobile-heading">Awasome Books</h1>
-            <h1 class="desktop-heading">All awsome books</h1>
-                <div class="book-details p-3 border-bottom border-secondary">
+            <div class="header border border-dark justify-content-between">
+                <div class="navbar">
+                    <a href="">Awasome Books</a>
                 </div>
-                <button type="button" class="remove btn btn-outline-secondary mt-3" id="removeAll">Remove All</button>
+                <div class="navbar gap-3">
+                    <a href="" class="list">List</a>
+                    <div class="vertical"></div>
+                    <a href="" class="add-new">Add new</a>
+                    <div class="vertical"></div>
+                    <a href="" class="contact">Contact</a>
+                </div>
+            </div>
+            <div class="date mb-4"></div>
+            <div class="books-div">
+                <h1 class="mobile-heading">Awasome Books</h1>
+                <h1 class="desktop-heading text-center">All awsome books</h1>
+                <div class="book-details p-3 border-bottom border-secondary">
+            </div>
+            <button type="button" class="remove btn btn-outline-danger mt-3" id="removeAll">Remove All</button>
+            </div>
+            <div class="add-div">
                 <h2 class="desktop-add-heading text-center">Add a new book</h2>
-                    <form class="add-form p-3 mt-4" name="book-add">
-                        <div class="mt-2">
-                            <input type="text"  placeholder="Title" id="title" autofocus maxlength="10" minlength="2" required>
-                        </div>
-                        <div class="mt-2">
-                            <input type="text" placeholder="Author" id="author" maxlength="10" minlength="2" required>
-                        </div>
-                        <div class="">
-                            <button type="button" class="remove btn btn-outline-secondary mt-2" id="add">add</button>
-                        </div>
-                    </form>
+                <form class="add-form p-3 mt-4" name="book-add">
+                    <div class="mt-2">
+                        <input type="text"  placeholder="Title" id="title" autofocus maxlength="10" minlength="2" required>
+                    </div>
+                    <div class="mt-2">
+                        <input type="text" placeholder="Author" id="author" maxlength="10" minlength="2" required>
+                    </div>
+                    <div class="">
+                        <button type="button" class="remove btn btn-outline-success mt-2" id="add">add</button>
+                    </div>
+                </form>
+            </div>
         </section>
     </div>
+    <div class="contact-div text-center">
+        <h2 class="desktop-add-heading text-center">Contact information</h2>
+        <div class="contact-details">
+            <h5 class="">Do you have any question or you want to say hello?</h5>
+            <h5 class="">you can reach out to us!</h5>
+            <h5>Our e-mail: saikatgpae@gmail.com</h5>
+            <h5>Our phone numbe: +919903678546</h5>
+            <h5>Our Address: Guptipara, Hooghly, Kolkata, WB, India - 712512,</h5>
+        </div>   
+    </div>
+    <footer class="footer m-4 p-2 border border-dark">Copyright ....</footer>
     <script src="./main.js"></script>
-    <!-- <script src="./index.js"></script> -->
 </body>
 </html>

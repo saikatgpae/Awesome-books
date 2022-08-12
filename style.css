@@ -4,14 +4,47 @@
 
 .desktop-add-heading {
   display: none;
+  font-size: calc(1.375rem + 1.5vw);
 }
 
 .book-details {
-  /* justify-content: space-between; */
   height: 300px;
   background-color: rgb(250, 247, 243);
   overflow: hidden;
   overflow-y: scroll;
+}
+
+.header {
+  display: none;
+}
+
+.data-backgorund {
+  background-color: darkgrey;
+}
+
+.date {
+  display: none;
+}
+
+.none {
+  display: none;
+}
+
+.dis-block {
+  display: block;
+}
+
+.contact-details {
+  padding-left: 300px;
+  padding-right: 300px;
+}
+
+.contact-div {
+  display: none;
+}
+
+.footer {
+  display: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -25,6 +58,7 @@
 
   .book-details {
     justify-content: space-between;
+    height: 500px;
   }
 
   .book-menu {
@@ -48,11 +82,37 @@
 
   .add {
     box-shadow: 5px 10px;
-
-    /* float: right; */
   }
 
   .desktop-add-heading {
+    display: block;
+  }
+
+  .header {
+    display: flex;
+    padding: 0 40px 0 40px;
+  }
+
+  .navbar a {
+    color: black;
+    text-decoration: none;
+  }
+
+  .vertical {
+    border-left: 2px solid black;
+    height: 20px;
+  }
+
+  .date {
+    display: block;
+    text-align: end;
+  }
+
+  .add-div {
+    display: none;
+  }
+
+  .footer {
     display: block;
   }
 }

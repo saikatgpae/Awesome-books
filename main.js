@@ -34,11 +34,11 @@ if (localStorage.getItem('books') != null) {
   for (let i = 0; i < storedBooksList.length; i++) {
   /* eslint-enable */
     const book = document.createElement('ul');
-    book.className = 'book-menu';
+    book.className = 'book-menu border-bottom';
     book.innerHTML = `<li class="book-name list-group-item">${storedBooksList[i].title}</li>
                     <li class="author-name list-group-item">${storedBooksList[i].author}</li>
-                    <li class="index author-name list-group-item">${i}</li>
-                    <button type="button" class="remove btn btn-outline-secondary">Remove</button>`;
+                    <li class="index d-none author-name list-group-item">${i}</li>
+                    <button type="button" class="remove btn btn-outline-primary">Remove</button>`;
     document.querySelector('.book-details').appendChild(book);
   }
 }
@@ -88,3 +88,37 @@ document.querySelector('#removeAll').addEventListener('click', () => {
   location.reload();
   /* eslint-enable */
 });
+
+// DISPLAYONG THE CURRENT DATE
+var currentdate = new Date();
+document.querySelector('.date').innerHTML = currentdate;
+console.log(currentdate);
+
+// ONCLICK OF List MENU
+// const mq = window.matchMedia('(max-width: 768px)');
+document.querySelector('.list').addEventListener('click', (event) => {
+  // event.stopPropagation();
+  event.preventDefault();
+  document.querySelector('.add-div').style.display = 'none';
+  document.querySelector('.books-div').style.display = 'block';
+  document.querySelector('.contact-div').style.display = 'none';
+  document.querySelector('.book-details').style.height = "500px"; 
+});
+
+// ONCLICK OF Add new MENU
+document.querySelector('.add-new').addEventListener('click', (event) => {
+  // event.stopPropagation();
+  event.preventDefault();
+  document.querySelector('.books-div').style.display = 'none';
+  document.querySelector('.add-div').style.display = 'block';
+  document.querySelector('.contact-div').style.display = 'none';
+  // document.querySelector('.book-details').style.height = "500px"; 
+});
+
+
+
+
+
+
+
+
